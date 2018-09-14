@@ -25,8 +25,8 @@ class bot:
 
 		try:
 			#Used for debugging
-			print(tip)
-			#self.api.update_status(tip)
+			#print(tip)
+			self.api.update_status(tip)
 
 		except tweepy.TweepError as error:
 			print(error.reason)
